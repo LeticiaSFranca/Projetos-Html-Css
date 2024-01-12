@@ -1,0 +1,112 @@
+body{
+    background-color: #FCC8D1;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #D14D72;
+    background-color: #FEF2F4;
+    padding: 10px;
+}
+
+div{
+    border: 0;
+    background-color: #FEF2F4;
+}
+
+#wrap input{
+    border-radius: 5px;
+    border: solid 2px #D14D72;
+    padding: 6px;
+    width: 30%;
+    height: 30px;
+    font-size: 16px;
+}
+
+#dia-semana{
+    border-radius: 5px;
+    border: solid 2px #D14D72;
+    padding: 6px;
+    width: 30%;
+    height: 45.5px;
+    font-size: 15px;
+}
+
+#botoes, #saida, #wrap{
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: #FEF2F4;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+button{
+    width: 30%;
+    height: 40px;
+    background-color: #D14D72;
+    color: white;
+    border: 0;
+    border-radius: 60px;
+    font-size: 18px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#btnIMC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    background-color: #609966;
+    box-shadow: 5px 5px 5px #40513B;
+    color: white;
+    text-decoration: none;
+}
+
+#btnIMC:hover{
+    background-color: #9DC08B;
+    cursor: pointer;
+    color: #0f0f0f;
+}
+
+#botaoDoIMC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button:hover, tr:hover{
+    background-color: #FFABAB;
+    color: black;
+}
+
+#saida input{
+    height: 20px;
+    width: 20px;
+}
+
+table{
+    border: 0;
+    border-radius: 30px;
+    background-color: #D14D72;
+    color: white;
+}
+
+td{
+    border: 1px solid #FEF2F4;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    font-size: 15px;
+}

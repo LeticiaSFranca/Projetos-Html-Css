@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Lista 2 - Letícia</title>
+</head>
+<body>
+    <div>
+        <h2><a href="https://lsfranca.netlify.app/" target="_blank">
+            <img src="logo.png" width="40px">Letícia França | 2023</a></h2>
+        <h3>Lista 2</h3>
+        <h3>Todos os Exercícios - Framework</h3>
+        <h3>Java Script - Feito em Console</h3>
+    </div>
+
+        <script>
+
+                // ----------------------------------------------------
+                    ativ7();
+
+                    function ativ7()
+                    {
+                        /* Menu - Letícia França
+                        Tudo feito em Console*/
+                    
+                        var op = parseInt(prompt("Digite a atividade desejada de 1 a 6: "));
+
+                        switch (op) {
+                            case 1: 
+                                ativ1(); break;
+                            case 2:  
+                                ativ2(); break;
+                            case 3: 
+                                ativ3(); break;
+                            case 4: 
+                                ativ4(); break;
+                            case 5:  
+                                ativ5(); break;
+                            case 6:  
+                                ativ6(); break;
+                        }
+                    }
+
+                    // ----------------------------------------------------
+
+                    function ativ1() {
+                        /* Questão 1 - Letícia França*/
+
+                        /*Você estava criando uma array com as cores do arco-íris, e se esqueceu de algumas
+                        cores. As cores padrão de um arco-íris são normalmente listadas nesta ordem:
+                        Arco_iris = [&quot;Vermelho&quot;, &quot;Laranja&quot;, &quot;Amarelo&quot;, &quot;Verde&quot;, 
+                        &quot;Azul&quot;, &quot;Roxo&quot;];
+                        Mas você fez assim:
+                        Arco_iris = [&quot;Vermelho&quot;, &quot;Laranja&quot;, &quot;Marrom&quot;, &quot;Azul&quot;];
+
+                        Usando somente o método splice(), insira as cores que faltam na array e remova a cor que
+                        não faz parte do arco-íris padrão*/
+
+                        var arrayCores = ["Vermelho", "Laranja", "Marrom", "Azul"];
+                        var coresRemovidos = arrayCores.splice(2,1);
+                        console.log(arrayCores);
+                        arrayCores.splice(2,0,"Amarelo", "Verde");
+                        arrayCores.splice(5,0,"Roxo");
+                        console.log(arrayCores);
+
+                        /*Explicação do splice() : Contém o índice em que haverá a inserção do elemento, o número de
+                        elementos que serão excluídos — o método permite isso
+                        também — e o item ou itens a serem incluídos.*/
+                    }
+
+                    // ----------------------------------------------------
+
+                    function ativ2() {
+                        /* Questão 2 - Letícia França*/
+
+                        /*Crie uma função com o objeto abaixo que retorne o seguinte conteúdo:
+                        O usuário mora em Belo Horizonte/ MG, no bairro Floresta, na rua Itajubá, nº 230.
+                        var endereco = {rua: &quot; &quot;, numero: , bairro: &quot; &quot;, cidade: &quot; &quot;, uf: &quot; &quot; };*/
+
+                        var endereco = {
+                        rua: "Itajubá",
+                        numero: 230,
+                        bairro: "Floresta",
+                        cidade: "Belo Horizonte",
+                        uf: "MG"
+                        };
+
+                        const { rua, numero, bairro, cidade, uf } = endereco;
+                        console.log(`O usuário mora em ${cidade} / ${uf}, no bairro ${bairro}, na rua "${rua}", nº ${numero}.`);
+                    }
+
+                    // ----------------------------------------------------
+
+                    function ativ3() {
+                        /* Questão 3 - Letícia França*/
+
+                        /* Escreva uma função que verifique se o vetor de passado possui a habilidade “Javascript” e retorna
+                        um booleano true/false caso exista ou não.
+                        function temHabilidade(habilidade)
+                        {
+                        // código aqui
+                        }
+                        var habilidade = [&quot;Javascript&quot;, &quot;ReactJS&quot;, &quot;React Native&quot;, &quot;Angular&quot;];
+                        temHabilidade(habilidade); // true ou false
+                        Dica: para verificar se um vetor contém um valor, utilize o método indexOf.*/
+
+                        var skills = ["Javascript", "ReactJS", "React Native", "Angular"];
+
+                        function temHabilidade(skills) {
+                        return skills.indexOf("Javascript") !== -1;
+                        }
+
+                        console.log(temHabilidade(skills)); // true ou false
+                    }
+
+                    // ----------------------------------------------------
+
+                    function ativ4() {
+                        /* Questão 4 - Letícia França*/
+
+                        /* Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+                            function experiencia(anos)
+                            {
+                            // código aqui
+                            }
+                            //entrada de dados var anosEstudo = ….;
+                            experiencia(anosEstudo);
+                            // De 0-1 ano: Junior
+                            // De 1-3 anos: Pleno
+                            // De 3-6 anos: Senior
+                            // De 7 acima: Mestre Jedi  */
+
+                        function experiencia(anos) {
+                            switch (anos) {
+                                case 1:
+                                anos <= 1
+                                return 'Iniciante'
+                                case 2:
+                                anos > 1 && anos <= 3
+                                return 'Pleno'
+                                case 3:
+                                anos >= 4 && anos <= 6
+                                return 'Senior'
+                                default:
+                                anos > 7
+                                return 'Mestre Jedi'
+                            }
+                        }
+
+                        var anosEstudo = 3;
+                        console.log(experiencia(anosEstudo));
+                    }
+
+                    // ----------------------------------------------------
+
+                    function ativ5() {
+                        /* Questão 5 - Letícia França*/
+
+                        /* Dado o seguinte vetor de objetos:
+                        var usuarios = [{
+                        nome: &quot;Gabriel&quot;,
+                        habilidades: [&quot;Javascript&quot;, &quot;ReactJS&quot;, &quot;Redux&quot;]
+                        },
+                        {
+                        nome: &quot;Lara&quot;,
+                        habilidades: [&quot;JAVA&quot;, &quot;PHP&quot;, &quot;Laravel&quot;]
+                        }];
+                        Escreva uma função que retorne o seguinte resultado:
+                        O Gabriel possui as habilidades: Javascript, ReactJS, Redux
+                        A Lara possui as habilidades: JAVA, PHP, Laravel
+                        Dica: Para percorrer um vetor você deve utilizar a sintaxe for…of e para unir valores de um array
+                        com um separador utilize o join. */
+
+                        var usuarios =[ {
+                            nome: "Gabriel",
+                            habilidades: ["Javascript", " ReactJS", " Redux"]
+                        },
+                        {
+                            nome: "Lara",
+                            habilidades: ["JAVA", " PHP", " Laravel"]
+                        }];
+                    
+                        for(let user of usuarios){
+                                            
+                            console.log(`O ${user.nome} possui as habilidades ${user.habilidades}.`);
+                        }
+                    }
+
+                    // ----------------------------------------------------
+
+                    function ativ6() {
+                        /* Questão 6 - Letícia França*/
+
+                        /* Crie um array de objetos contendo dados sobre 10 pessoas (nome, idade, RG) , utilize o
+                        método filter para retornar apenas as idades de quem tem +de 18 anos.
+                        Exemplo
+                        // array de números
+                        const numeros = [1, 2, 3, 4];
+                        // array com objetos
+                        const objetos = [
+                        {
+                        nome: &#39;Harry Potter&#39;,
+                        idade:15
+                        },
+                        {
+                        nome: &#39;Gandalf&#39;,
+                        idade: 1706
+                        },
+                        {
+                        nome: &#39;Jon Snow&#39;,
+                        idade: 28
+                        },
+                        ];
+                        // função que filtra os valores menores que 2, ou seja, apenas os maiores vão para o novo array
+                        // Lembre-se que o filter retorna um novo array
+                        let novoArrayA = numeros.filter(numero =&gt; numero &gt; 2);
+                        console.log(novoArray); // =&gt; [3, 4]
+                        // função que filtra o array objeto pelo nome
+                        // Lembre-se que o filter retorna um novo array
+                        let novoArrayB = objetos.filter(objeto =&gt; objeto.nome === &#39;Gandalf&#39;);
+                        console.log(novoArray) // =&gt; [ { nome: &#39;gandalf&#39; } ]*/
+
+                        var usuarios =[ {
+                            nome: "Gabriel",
+                            habilidades: ["Javascript", " ReactJS", " Redux"]
+                        },
+                        {
+                            nome: "Lara",
+                            habilidades: ["JAVA", " PHP", " Laravel"]
+                        }];
+                    
+                        for(let user of usuarios){
+                                            
+                            console.log(`O ${user.nome} possui as habilidades ${user.habilidades}.`);
+                        }
+                    }
+        </script>
+</body>
+</html>

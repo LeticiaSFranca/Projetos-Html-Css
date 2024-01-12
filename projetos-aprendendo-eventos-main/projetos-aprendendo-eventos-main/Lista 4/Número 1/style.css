@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: fit-content;
+  text-align: center;
+}
+
+label{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+input{
+  font-size: 20px;
+}
+
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  background: linear-gradient(80deg, #F6E6C2 12.55%, #FFAACF 112.71%);
+  font-family: 'Poppins', sans-serif;
+}
+
+button{
+  border: solid white;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius: 40px;
+}
+
+button:hover{
+  border: solid black;
+  background: transparent;
+  color: black;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+h2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

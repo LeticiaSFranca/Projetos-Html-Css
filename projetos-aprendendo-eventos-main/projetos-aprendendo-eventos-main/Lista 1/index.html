@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Atividade 1 - Letícia</title>
+</head>
+<body>
+    <div>
+        <h2><a href="https://lsfranca.netlify.app/" target="_blank">
+            <img src="logo.png" width="40px">Letícia França | 2023</a></h2>
+        <h3>Atividade 1</h3>
+        <h3>Todos os Exercícios - Framework</h3>
+        <h3>Java Script</h3>
+    </div>
+
+        <script>
+
+            // ----------------------------------------------------
+atv6();
+                function atv6()
+                {
+
+                    /* Questão 6 - Letícia França*/
+
+                    /* Faça um script que contenha um menu de seleção deste exercício e execute os mesmos
+                    mediante seleção: Ex. selecionei 1, deve executar a primeira atividade e assim por diante. */
+                
+                    var op = parseInt(prompt("Digite a atividade desejada de 1 a 5: "));
+
+                    switch (op) {
+                        case 1: 
+                            ativ1(); break;
+                        case 2:  
+                            ativ2(); break;
+                        case 3: 
+                            ativ3(); break;
+                        case 4: 
+                            ativ4(); break;
+                        case 5:  
+                            ativ5(); break;
+                    }
+
+                }
+
+                // ----------------------------------------------------
+
+
+                function ativ1() {
+                    /* Questão 1 - Letícia França*/
+
+                    /*Faça um script que entre com o nome e o salário de um funcionário e mostre seu novo
+                    salário, sabendo que o mesmo teve um aumento de 10%.*/
+
+                    let nome = prompt("Digite seu nome:");
+                    let salario = parseFloat(prompt("Digite seu salário:"));
+
+                    let aumento = salario * 0.10;
+                    let novosalario = salario + aumento;
+
+                    alert("Seu novo salario será de " + novosalario);
+                }
+
+                // ----------------------------------------------------
+
+                function ativ2() {
+                    /* Questão 2 - Letícia França*/
+
+                    /*Faça um script que leia dois valores inteiros A e B, se os valores forem iguais, os mesmos
+                    devem ser somados, caso contrário multiplique A por B, ao final do cálculo atribuir o
+                    resultado para uma variável C e exibir o resultado.*/
+
+                    let a = parseInt(prompt("Digite o primeiro número:"));
+                    let b = parseInt(prompt("Digite o segundo número:"));
+
+                    if (isNaN) {
+                        if (a == b) {
+                            c = a + b;
+                        } else {
+                            c = a * b;
+                        }
+                    }
+
+                    alert("O valor total é: " + c);
+                }
+
+                // ----------------------------------------------------
+
+                function ativ3() {
+                    /* Questão 3 - Letícia França*/
+
+                    /* A partir do preço à vista de um determinado produto, calcule o preço total a pagar e o valor
+                    da prestação mensal, referentes ao pagamento parcelado. Se o pagamento for parcelado
+                    em 3 vezes deve ser dado um acréscimo de 10% no total a ser pago. Se o parcelamento
+                    for em 5 vezes, o acréscimo será de 20%. Lembrando que são apenas as 2 opções para
+                    parcelamento.*/
+
+                    let valor = parseInt(prompt("Digite o valor do produto à vista: "));
+                    let parcela = parseInt(prompt("Digite em quantas parcelas deseja dividir: "));
+                    let acrescimo = 0;
+                    let resultado = 0;
+                    let valorparcela = 0;
+
+                    if (parcela == 3) {
+                        acrescimo = valor * 0.10
+                        resultado = valor + acrescimo
+                        valorparcela = resultado / 3
+                        alert("O valor total da compra será de " + resultado + " reais, e cada parcela será de " + valorparcela.toFixed(2));
+                    }
+
+                    else if (parcela == 5) {
+                        acrescimo = valor * 0.20
+                        resultado = valor + acrescimo
+                        valorparcela = resultado / 5
+                        alert("O valor total da compra será de " + resultado + " reais, e cada parcela será de " + valorparcela.toFixed(2));
+                        /*ToFixed é pra limitar a quantidade de casas decimais.*/
+                    }
+
+                    else {
+                        alert("Esse valor só poderá ser dividido de 3 ou 5 vezes!");
+                    }
+                }
+
+                // ----------------------------------------------------
+
+                function ativ4() {
+                    /* Questão 4 - Letícia França*/
+
+                    /* Faça um script que leia o nome e as três notas de uma disciplina de um aluno e ao final
+                    escreva o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média para
+                    aprovação é igual ou superior a 7. */
+
+                    let nome = prompt("Digite seu nome: ");
+                    let disciplina = prompt("Digite o nome da disciplina: ");
+                    let nota1 = parseInt(prompt("Digite o valor da primeira nota: "));
+                    let nota2 = parseInt(prompt("Digite o valor da segunda nota: "));
+                    let nota3 = parseInt(prompt("Digite o valor da terceira nota: "));
+
+                    let resultado = nota1 + nota2 + nota3;
+                    let media = resultado / 3;
+
+                    if (media >= 7) {
+                        alert(nome + " , o valor final da sua nota é de: " + resultado + "\nSua média é: " + media.toFixed(1) + "\nVocê foi aprovado.");
+                    }
+
+                    if (media < 7) {
+                        alert(nome + " , o valor final da sua nota é de: " + resultado + "\nSua média é: " + media.toFixed(1) + "\nVocê foi reprovado.");
+                    }
+                }
+
+                // ----------------------------------------------------
+
+                function ativ5() {
+                    /* Questão 5 - Letícia França*/
+
+                    /* Faça um script que receba um número de 1 a 12 e retorne com o nome do respectivo mês
+                    referente ao número. Ex - Entrou com número 1 saída: Janeiro e assim sucessivamente. */
+
+                    let mes = parseInt(prompt("Digite o número do mês que você nasceu." + "\nEx.: 3 (Março)"));
+
+                    if (mes == 1) { alert("Você nasceu em Janeiro.") };
+                    if (mes == 2) { alert("Você nasceu em Fevereiro.") };
+                    if (mes == 3) { alert("Você nasceu em Março.") };
+                    if (mes == 4) { alert("Você nasceu em Abril.") };
+                    if (mes == 5) { alert("Você nasceu em Maio.") };
+                    if (mes == 6) { alert("Você nasceu em Junho.") };
+                    if (mes == 7) { alert("Você nasceu em Julho.") };
+                    if (mes == 8) { alert("Você nasceu em Agosto.") };
+                    if (mes == 9) { alert("Você nasceu em Setembro.") };
+                    if (mes == 10) { alert("Você nasceu em Outubro.") };
+                    if (mes == 11) { alert("Você nasceu em Novembro.") };
+                    if (mes == 12) { alert("Você nasceu em Dezembro.") };
+
+                    if (mes < 1 || mes > 12) { alert("Indisponível. Digite um número de 1 a 12.") }
+                }
+        </script>
+</body>
+</html>

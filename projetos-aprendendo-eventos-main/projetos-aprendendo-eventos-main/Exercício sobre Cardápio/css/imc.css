@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCC8D1;
+    color: #0f0f0f;
+}
+
+#btnIMC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 20px;
+    background-color: #609966;
+    box-shadow: 5px 5px 5px #40513B;
+    color: white;
+    text-decoration: none;
+}
+
+#btnIMC:hover{
+    background-color: #9DC08B;
+    cursor: pointer;
+    color: #0f0f0f;
+    border: 0;
+}
+
+#botaoDoIMC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -50px;
+}
+
+label{
+    font-weight: bolder;
+}
+
+span{
+    font-size: 14px;
+    margin-top: -20px;
+}
+
+input{
+    background-color: transparent;
+    border: solid 2px #D14D72;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+main{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FEF2F4;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #D14D72;
+}
+
+.divAltura, .divPeso, .divCalc{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #D14D72;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 150px;
+    border-radius: 50px;
+    border: 0;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: transparent;
+    border: solid 2px #D14D72;
+    color: #D14D72;
+    /* transition: ease-in-out 0.2s; */
+}
+
+#resultado{
+    margin-top: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.divCalc{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

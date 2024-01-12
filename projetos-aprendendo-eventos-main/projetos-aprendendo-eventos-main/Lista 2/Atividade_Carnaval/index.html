@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Lista 2 - Letícia</title>
+</head>
+
+<body>
+    <div>
+        <h2><a href="https://lsfranca.netlify.app/" target="_blank">
+                <img src="logo.png" width="40px">Letícia França | 2023</a></h2>
+        <h3>Lista 2</h3>
+        <h3>Todos os Exercícios - Framework</h3>
+        <h3>Java Script - Feito em Console</h3>
+    </div>
+
+    <script>
+
+        // ----------------------------------------------------
+        menu();
+
+        function menu() {
+            /* Menu - Letícia França*/
+
+            var op = parseInt(prompt("Digite a atividade desejada de 1 a 6: "));
+
+            switch (op) {
+                case 1:
+                    ativ1(); break;
+                case 2:
+                    ativ2(); break;
+            }
+        }
+
+        // ----------------------------------------------------
+
+        function ativ1() {
+            /* Questão 1 - Letícia França*/
+
+            /* Elabore um script para efetuar o cálculo da quantidade de litros de bebidas consumida por um
+            determinado bloco durante o carnaval. O script recebe como entrada a quantidade de packs de bebidas
+            consumidos durante o período.
+            - Considerar que o carnaval possui cinco dias. 
+            - Considerar que um pack de bebidas tem 12 latas.
+            - Sabe-se que cada lata tem 350ml e que 1 litro em 1000ml.
+            - Supondo que cada pack custa R$38.00, informar também o gasto em cerveja do referido bloco.
+            - Desenvolver o script com função, onde as mesmas recebem os parâmetros de entrada e retornam os
+            cálculos. */
+
+            var quantPacks = parseInt(prompt("Digite a quantidade de Packs consumidas em 5 dias: "));
+
+            latas = quantPacks * 12;
+            valor = latas * 38;
+
+            var dados = {
+                quantPacks: quantPacks,
+                latas: latas,
+                valor: valor
+            };
+
+            const { quantPacks, latas, valor } = dados;
+            console.log(`Quantidade de packs consumidas: ${quantPacks}, no total foram ${latas}latas. Sendo o valor final: R$ ${valor}.`);
+        }
+
+        // ----------------------------------------------------
+
+        function ativ2() {
+            /* Questão 2 - Letícia França*/
+
+            /*O Carnaval do Cotemig celebrado hoje terá um concurso onde serão julgadas vários quesitos para
+            determinar a fantasia campeã do Carnaval.
+
+            Cada fantasia é avaliada em vários quesitos; em cada quesito, cada aluno recebe cinco notas que variam
+            de 5,0 a 10,0. 
+            
+            A nota final do aluno em um dado quesito é a soma das três notas centrais recebidas pelo
+            aluno, excluindo a maior e a menor das cinco notas.
+
+            Como existem muitos alunos e muitos quesitos, você vai escrever um programa que, dadas as 5 notas,
+            calcula a sua nota final num dado quesito.
+
+            Quesitos: criatividade, originalidade, elegância, acabamento e conservação.*/
+
+            var nomeAluno = prompt("Digite ao nome do Aluno: ");
+
+            var criatividade = parseFloat(prompt("Digite a nota para CRIATIVIDADE: "));
+            var originalidade = parseFloat(prompt("Digite a nota para ORIGINALIDADE: "));
+            var elegancia = parseFloat(prompt("Digite a nota para ELEGANCIA: "));
+            var acabamento = parseFloat(prompt("Digite a nota para ACABAMENTO: "));
+            var conservacao = parseFloat(prompt("Digite a nota para CONSERVACAO: "));
+
+            /* Não sei como fazer com o maior e o menor número. Esperar a correção!*/
+
+            if (criatividade < 5, 0 || criatividade > 10, 0
+                || originalidade < 5, 0 || originalidade > 10, 0
+                || elegancia < 5, 0 || elegancia > 10, 0
+                || acabamento < 5, 0 || acabamento > 10, 0
+                || conservacao < 5, 0 || conservacao > 10, 0) {
+                alert("A nota deve ser entre 5,0 e 10,0.");
+            }
+
+            console.log(`O(a) Aluno(a) ${nomeAluno}, tem como nota final: ${notaFinal}.`);
+        }
+
+            // ----------------------------------------------------
+
+    </script>
+</body>
+
+</html>

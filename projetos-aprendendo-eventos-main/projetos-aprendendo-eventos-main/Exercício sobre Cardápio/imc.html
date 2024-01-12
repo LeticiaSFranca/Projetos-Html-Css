@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="logoTorrePreta.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Projeto IMC | Letícia</title>
+    <link rel="stylesheet" href="./css/imc.css"/>
+  </head>
+  <body>
+
+    <main>
+      <h1>Projeto IMC</h1>
+
+      <span>by: Letícia França - 3D1</span>
+
+      <div class="divAltura">
+        <label for="altura">Digite sua Altura:</label>
+        <input type="number" id="altura" />
+      </div>
+
+      <div class="divPeso">
+        <label for="peso">Digite seu Peso:</label>
+        <input type="number" id="peso" />
+      </div>
+
+      <div class="divCalc">
+        <button onclick="calcImc()">Calcular</button>
+      </div>
+
+      <footer id="botaoDoIMC">
+        <button id="btnIMC"><a href="./index.html">Voltar ao Cardápio</a></button>
+      </footer>
+      <span id="resultado"></span>
+    </main>
+
+    <script src="./js/imc.js"></script>
+  </body>
+</html>

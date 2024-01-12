@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Lista 2 - Letícia</title>
+</head>
+
+<body>
+    <div>
+        <h2><a href="https://lsfranca.netlify.app/" target="_blank">
+                <img src="logo.png" width="40px">Letícia França | 2023</a></h2>
+        <h3>Lista 3</h3>
+        <h3>Todos os Exercícios - Framework</h3>
+        <h3>Java Script - Feito em Console</h3>
+    </div>
+
+    <script>
+
+        // ----------------------------------------------------
+        menu();
+
+        function menu() {
+            /* Menu - Letícia França*/
+
+            var op = parseInt(prompt("Digite a atividade desejada de 1 a 10: "));
+
+            switch (op) {
+                case 1:
+                    ativ1(); break;
+                case 2:
+                    ativ2(); break;
+                case 3:
+                    ativ3(); break;
+                case 4:
+                    ativ4(); break;
+                case 5:
+                    ativ5(); break;
+                case 6:
+                    ativ6(); break;
+                case 7:
+                    ativ7(); break;
+                case 8:
+                    ativ8(); break;
+                case 9:
+                    ativ9(); break;
+                case 10:
+                    ativ10(); break;
+            }
+        }
+
+        // ----------------------------------------------------
+
+        function ativ1() {
+            /* Questão 1 - Letícia França*/
+
+            array1 = [] // aqui declara a array 1 pra usar dps, pq como vou dar push, tem q declarar antes
+            array2 = [] // mesma coisa aq
+
+            for (i = 0; i < 5; i++) { // for para repetir o contador ate 5 pq ai vai fazer as arrays terem 5 valores dentro
+
+                array1.push(parseInt(prompt("Digite o número do primeiro vetor: ")))
+                // push é para inserir valores na array que ja foi iniciada antes, quando vc usa o push vc insere o valor na ultima casa vazia,
+                // se vc inicou a array sem nenhum valor, o primeiro push vai ser colocado no 0, o segundo no 1, e assim por diante.
+
+                array2.push(parseInt(prompt("Digite o número do segundo vetor: ")))
+                // parseInt é pra transformar o numero em inteiro, e prompt pra receber os valores pelo prompt do console do navegador
+            }
+
+            array = array1.concat(array2)
+            // isso e pra concatenar as duas arrays com os valores inseridos pelo usuario em outra variavel
+            // (juntar os dois valores em um so, ex: array1 = [1,3,5,7,9] array2 = [2,4,6,8,10], array concatenada = [1,3,5,7,9,2,4,6,8,10]) 
+            // lembrando q nao vai em ordem crescrente, eles so vao juntar uma com a outra
+
+            array.sort((a, b) => a - b)
+            // o array.sort é justamente para ordernar as variveis,basicamente 'sortir' elas (esse (a,b) => a - b) 
+            // é pra deixar elas em ordem crescente, pra deixar em decrescente é so inverter o a pelo b (eu acho)
+
+            array.pop()
+            // o pop() serve pra remover o primero valor da array, ex array = [1,2,3,4],
+            // array.pop() vai fazer com que a array seja array = [2,3,4]
+
+            array.shift()
+            // o shift é basicamente a mesma coisa de cima mas retira o ultimo numero, 
+            // entao seria array = [1,2,3,4], array.shift() vai fazer com que a array seja array = [1,2,3]
+
+            console.log(array)
+            // isso aq n sei se vc sabe mas é para mostrar algo dentro do console do navegador(F12),
+            // pode ser uma variavel ou um texto dentro das ""
+
+
+            // se ler direitin acho q da pra entender, senao pd me perguntar no wpp, as outras questoes tb
+        }
+
+        // ----------------------------------------------------
+
+        function ativ2() {
+            /* Questão 2 - Letícia França*/
+
+            // QUESTAO 1
+            array1 = []
+            array2 = []
+
+            for (i = 0; i < 5; i++) {
+                array1.push(parseInt(prompt("QUESTAO 1\rDigite o numero do primeiro vetor: ")))
+                array2.push(parseInt(prompt("QUESTAO 1\rDigite o numero do segundo vetor: ")))
+                i++
+            }
+
+            array = array1.concat(array2)
+            array.sort((a, b) => a - b)
+            array.pop()
+            array.shift()
+            console.log(array)
+
+            // QUESTAO 2
+
+            search = parseInt(prompt("QUESTAO 2\rDigite o número que deseja verificar no vetor: "))
+            console.log(search)
+            function searchArray(search) {
+                let a = array.indexOf(search, 0)
+
+                if (a >= 0) {
+                    return `${a} existe no vetor concatenado.`
+                } else {
+                    return `${a} não existe no vetor concatenado.`
+                }
+            }
+
+            console.log(searchArray(array))
+        }
+
+        // ----------------------------------------------------
+
+        function ativ3() {
+
+            /* Questão 3 - Letícia França*/
+
+            array = []
+
+            for (i = 0; i < 10; i++) {
+                array.push(parseInt(prompt(`Digite o número para colocar na posição [${i}] do vetor.`)))
+            }
+
+            console.log(`Array normal : ${array.join(", ")}`)
+
+            array = array.map(function (n) {
+                return n * 2
+            })
+
+            console.log(`Array dobrada : ${array.join(", ")}`)
+        }
+        // ----------------------------------------------------
+
+        function ativ4() {
+            /* Questão 4 - Letícia França*/
+
+            const produtos = [
+                {
+                    id: 1,
+                    categoria: 'limpeza',
+                    name: 'Amaciante'
+                },
+                {
+                    id: 2,
+                    categoria: 'limpeza',
+                    name: 'Detergente'
+                },
+                {
+                    id: 3,
+                    categoria: 'alimento',
+                    name: 'ovo'
+                },
+                {
+                    id: 4,
+                    categoria: 'alimento',
+                    name: 'alface'
+                }
+            ]
+
+            produto = produtos.map(produto => ({
+                id: produto.id
+            }))
+
+            console.log(produto)
+        }
+
+        // ----------------------------------------------------
+
+        function ativ5() {
+            /* Questão 5 - Letícia França*/
+
+            const produtos = [
+                {
+                    id: 1,
+                    categoria: 'limpeza',
+                    name: 'Amaciante'
+                },
+                {
+                    id: 2,
+                    categoria: 'limpeza',
+                    name: 'Detergente'
+                },
+                {
+                    id: 3,
+                    categoria: 'alimento',
+                    name: 'ovo'
+                },
+                {
+                    id: 4,
+                    categoria: 'alimento',
+                    name: 'alface'
+                }
+            ]
+
+            alimentos = produtos.filter(produto => produto.categoria === 'alimento')
+            console.log(alimentos)
+        }
+
+        // ----------------------------------------------------
+
+        function ativ6() {
+            /* Questão 6 - Letícia França*/
+
+            const produtos = [
+                {
+                    id: 1,
+                    categoria: 'limpeza',
+                    name: 'Amaciante'
+                },
+                {
+                    id: 2,
+                    categoria: 'limpeza',
+                    name: 'Detergente'
+                },
+                {
+                    id: 3,
+                    categoria: 'alimento',
+                    name: 'ovo'
+                },
+                {
+                    id: 4,
+                    categoria: 'alimento',
+                    name: 'alface'
+                }
+            ]
+
+            alimentos = produtos.filter(produto => produto.categoria === 'alimento').map(produto => ({
+                id: produto.id
+            }))
+            console.log(alimentos)
+        }
+
+        // ----------------------------------------------------
+
+        function ativ7() {
+            /* Questão 7 - Letícia França*/
+
+            const produtos = [
+                { nome: 'Arroz', preco: 9.99 },
+                { nome: 'Feijão', preco: 15.50 },
+                { nome: 'Macarrão', preco: 7.25 },
+                { nome: 'Carne', preco: 25.00 },
+                { nome: 'Leite', preco: 3.99 },
+                { nome: 'Pão', preco: 12.75 },
+                { nome: 'Azeite', preco: 19.99 },
+                { nome: 'Café', preco: 8.50 },
+                { nome: 'Biscoito', preco: 10.00 },
+                { nome: 'Queijo', preco: 5.49 }
+            ]
+            desconto = produtos.map(p => ({
+                nome: p.nome,
+                preco: Math.round(((p.preco - (p.preco * 0.10)) + Number.EPSILON) * 100) / 100
+            }))
+
+            console.log("Produtos sem desconto aplicado : ")
+            console.log(produtos)
+            console.log("Produtos com desconto aplicado : ")
+            console.log(desconto)
+        }
+
+        // ----------------------------------------------------
+
+        function ativ8() {
+            /* Questão 8 - Letícia França*/
+
+            funcionarios = [
+                {
+                    nome: 'Han Solo',
+                    departamento: 'Financeiro',
+                    salario: 5000
+                },
+                {
+                    nome: 'Luke',
+                    departamento: 'Financeiro',
+                    salario: 15000
+                },
+                {
+                    nome: 'Ben',
+                    departamento: 'Marketing',
+                    salario: 2000
+                },
+                {
+                    nome: 'Leia',
+                    departamento: 'Marketing',
+                    salario: 10000
+                },
+                {
+                    nome: 'Rey',
+                    departamento: 'Financeiro',
+                    salario: 2500
+                }
+            ]
+            console.log(funcionarios)
+            funcionarios = funcionarios.filter(funcionario => funcionario.departamento === 'Financeiro').map(funcionario => ({
+                nome: funcionario.nome,
+                departamento: funcionario.departamento,
+                salario: (funcionario.salario * 0.5) + funcionario.salario
+            }))
+            soma = funcionarios.reduce((s, funcionario) => s + funcionario.salario, 0)
+            console.log(funcionarios)
+            console.log('Soma dos salarios do departamento financeiro : ' + soma)
+        }
+
+        // ----------------------------------------------------
+
+        function ativ9() {
+            /* Questão 9 - Letícia França*/
+
+
+        }
+
+        // ----------------------------------------------------
+
+        function ativ10() {
+            /* Questão 10 - Letícia França*/
+        }
+
+    </script>
+</body>
+
+</html>

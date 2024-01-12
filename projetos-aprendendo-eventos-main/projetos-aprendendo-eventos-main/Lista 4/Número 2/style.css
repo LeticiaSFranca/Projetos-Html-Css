@@ -1,0 +1,60 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: fit-content;
+    text-align: center;
+    flex-direction: row;
+}
+
+label {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+input {
+    font-size: 20px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    border: solid black;
+    background: transparent;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 40px;    
+    margin-left: 30px;
+    padding: 20px;
+}
+
+button:hover {
+    border: solid pink;
+    background: transparent;
+    color: pink;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
