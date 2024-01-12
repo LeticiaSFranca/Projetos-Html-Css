@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://rsms.me/inter/inter.css');
+/*font-family: 'Inter', sans-serif;*/
+
+/* criando página de vídeos */
+#meus-outros-videos {
+    background: linear-gradient(60deg, #0f0f0f 0%, #012776 112.71%);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meus-outros-videos1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.meus-outros-Videos2 {
+    margin-left: -90px;
+    position: absolute;
+    margin-top: -20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnDrive{
+    background: white;  
+    margin-top: 160px;
+    width: 430px;
+    height: 80px;
+    border-radius: 62px;
+    box-shadow: 5px 5px 5px #7299E8;
+    color: #0F0F0F;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#btnDrive:hover{
+    cursor: pointer;
+    color: #7299E8;
+}
+
+#legendaDrive{
+    position: absolute;
+    padding-left: 130px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    padding-top: 25px;
+    color: #0F0F0F;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+}
+
+#legendaDrive:hover{
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------*/
+
+@media (max-width:650px)
+
+/*Para Celular*/
+    {
+    #meus-outros-videos {
+        height: 300px;
+    }
+
+    .meus-outros-Videos2 {
+        position: absolute;
+        display: flex;
+        margin-left: 60px;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+
+    #btnDrive{
+        margin-left: 80px;
+        width: 230px;
+        height: 50px;
+        margin-top: 130px;
+    }
+
+    #iconeDrive{
+        position: absolute;
+        width: 40px;
+        margin-top: -3px;
+        margin-left: -10px;
+    }
+
+    #legendaDrive{
+        position: absolute;
+        font-size: 18px;
+        margin-left: -76px;
+        margin-top: -13px;
+    }
+}

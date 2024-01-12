@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://rsms.me/inter/inter.css');
+/*font-family: 'Inter', sans-serif;*/
+
+/* criando páginas de logos */
+#minhas-logos {
+    background-color: white;
+    height: 1250px;
+    display: flex;
+    align-items: center;
+}
+
+.minhas-logos2{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -570px;
+}
+
+#pontinhosDecoracao3{
+    position: absolute;
+    display: flex;
+    margin-left: 830px;
+    z-index: 1;
+    margin-top: -70px;
+}
+
+#gridbox2 {
+    display: grid;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    z-index: 2;
+    gap: 6%;
+    margin-top: -170px;
+    grid-template: "caixa1 caixa2 caixa3 caixa4 caixa5" 100px 
+                    "caixa6 caixa7 caixa8 caixa9 caixa10" 100px     
+                    "caixa11 caixa12 caixa13 caixa14 caixa15" 100px
+                    "caixa16 caixa17 caixa18 caixa19 caixa20" 100px / 1fr 1fr 1fr 1fr  1fr;
+}
+
+.omni-caixa2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 7px 7px 7px #00000085;
+}
+
+#caixa1_1{
+    background-color: #0f0f0f;
+    margin-left: 57px;
+}
+
+#caixa2_1{
+    background-color: #ff5c8d;
+}
+
+#caixa3_1{
+    background-color: #0f0f0f;
+}
+
+#caixa4_1{
+    background-color: #ff5c8d;
+}
+
+#caixa5_1{
+    background-color: #0f0f0f;
+}
+
+/*---------------------------------------*/
+
+#caixa6_1{
+    margin-top: 100px;
+    background-color: #0f0f0f;
+    margin-left: 57px;
+    margin-right: 0%;
+}
+
+#caixa7_1{
+    margin-top: 100px;
+    background-color: #ff5c8d;
+}
+
+#caixa8_1{
+    margin-top: 100px;
+    background-color: #0f0f0f;
+}
+
+#caixa9_1{
+    margin-top: 100px;
+    background-color: #ff5c8d;
+}
+
+#caixa10_1{
+    margin-top: 100px;
+    background-color: #0f0f0f;
+}
+
+/*---------------------------------------*/
+
+#caixa11_1{
+    margin-top: 400px;
+    margin-left: 57px;
+    background-color: #0f0f0f;
+}
+
+#caixa12_1{
+    margin-top: 400px;
+    background-color: #ff5c8d;
+}
+
+#caixa13_1{
+    margin-top: 400px;
+    background-color: #0f0f0f;
+}
+
+#caixa14_1{
+    margin-top: 400px;
+    background-color: #ff5c8d;
+}
+
+#caixa15_1{
+    margin-top: 400px;
+    background-color: #0f0f0f;
+}
+
+/*---------------------------------------*/
+
+#caixa16_1{
+    margin-left: 57px;
+    margin-top: 700px;
+    background-color: #0f0f0f;
+}
+
+#caixa17_1{
+    margin-top: 700px;
+    background-color: #ff5c8d;
+}
+
+#caixa18_1{
+    margin-top: 700px;
+    background-color: #0f0f0f;
+}
+
+#caixa19_1{
+    margin-top: 700px;
+    background-color: #ff5c8d;
+}
+
+#caixa20_1{
+    margin-top: 700px;
+    background-color: #0f0f0f;
+}
+
+/*--------------------------------------------*/
+
+@media (max-width:1200px) /*Para Tablet*/{
+    .minhas-logos2{
+        position: absolute;
+        display: flex;
+        margin-left: 270px;
+        width: 450px;
+        margin-top: -550px;
+    }
+
+    .omni-caixa2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -200px;
+        width: 160px;
+        height: 160px;
+        box-shadow: 7px 7px 7px #00000085;
+    }
+
+    #caixa1_1{
+        background-color: #0f0f0f;
+        margin-left: 30px;
+    }
+    
+    #caixa2_1{
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa3_1{
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+    
+    #caixa4_1{
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa5_1{
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+    
+    /*---------------------------------------*/
+    
+    #caixa6_1{
+        margin-top: 100px;
+        background-color: #0f0f0f;
+        margin-left: 30px;
+    }
+    
+    #caixa7_1{
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa8_1{
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+    
+    #caixa9_1{
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa10_1{
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+    
+    /*---------------------------------------*/
+    
+    #caixa11_1{
+        margin-top: 400px;
+        margin-left: 30px;
+        background-color: #0f0f0f;
+    }
+    
+    #caixa12_1{
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa13_1{
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+    
+    #caixa14_1{
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa15_1{
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+    
+    /*---------------------------------------*/
+    
+    #caixa16_1{
+        margin-left: 30px;
+        margin-top: 700px;
+        background-color: #0f0f0f;
+    }
+    
+    #caixa17_1{
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa18_1{
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+    
+    #caixa19_1{
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+    
+    #caixa20_1{
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #0f0f0f;
+    }
+
+    .imgLogos {
+        width: 145px;
+    }
+}
+
+@media (max-width:650px)
+
+/*Para Celular*/
+    {
+    #minhas-logos {
+        height: 2500px;
+    }
+
+    .minhas-logos2 {
+        position: absolute;
+        display: flex;
+        margin-left: 40px;
+        width: 400px;
+        margin-top: -1180px;
+    }
+
+    .omni-caixa2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -200px;
+        width: 160px;
+        height: 160px;
+        box-shadow: 7px 7px 7px #00000085;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa1_1 {
+        position: absolute;
+        background-color: #0f0f0f;
+        margin-left: 250px;
+        margin-top: -1780px;
+    }
+
+    #caixa2_1 {
+        position: absolute;
+        margin-left: 690px;
+        margin-top: -1780px;
+        background-color: #ff5c8d;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa3_1 {
+        position: absolute;
+        margin-top: -1250px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa4_1 {
+        position: absolute;
+        margin-top: -1250px;
+        margin-left: 690px;
+        background-color: #0f0f0f;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa5_1 {
+        position: absolute;
+        margin-top: -750px;
+        margin-left: 250px;
+        background-color: #0f0f0f;
+    }
+
+
+    #caixa6_1 {
+        position: absolute;
+        margin-top: -750px;
+        background-color: #ff5c8d;
+        margin-left: 690px;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa7_1 {
+        position: absolute;
+        margin-top: -300px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa8_1 {
+        position: absolute;
+        margin-top: -300px;
+        margin-left: 690px;
+        background-color: #0f0f0f;
+        color: #0f0f0f;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa9_1 {
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 250px;
+        background-color: #0f0f0f;
+    }
+
+    #caixa10_1 {
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 690px;
+        background-color: #ff5c8d;
+        color: black;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa11_1 {
+        position: absolute;
+        margin-top: 620px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa12_1 {
+        position: absolute;
+        margin-top: 620px;
+        margin-left: 690px;
+        background-color: #0f0f0f;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa13_1 {
+        position: absolute;
+        margin-top: 1070px;
+        margin-left: 250px;
+        background-color: #0f0f0f;
+    }
+
+    #caixa14_1 {
+        position: absolute;
+        margin-top: 1070px;
+        margin-left: 690px;
+        background-color: #ff5c8d;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa15_1 {
+        position: absolute;
+        margin-top: 1520px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+
+    #caixa16_1 {
+        position: absolute;
+        margin-left: 690px;
+        margin-top: 1520px;
+        background-color: #0f0f0f;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa17_1 {
+        position: absolute;
+        margin-top: 1950px;
+        margin-left: 250px;
+        background-color: #0f0f0f;
+    }
+
+    #caixa18_1 {
+        position: absolute;
+        margin-top: 1950px;
+        margin-left: 690px;
+        background-color: #ff5c8d;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa19_1 {
+        position: absolute;
+        margin-top: 2400px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa20_1 {
+        position: absolute;
+        margin-top: 2400px;
+        margin-left: 690px;
+        background-color: #0f0f0f;
+    }
+
+    /*---------------------------------------*/
+
+    .imgLogos {
+        width: 145px;
+    }
+}

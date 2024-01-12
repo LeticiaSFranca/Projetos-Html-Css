@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://rsms.me/inter/inter.css');
+/*font-family: 'Inter', sans-serif;*/
+
+/* criando página de vídeos */
+#meus-videos {
+    background-color: #0f0f0f;
+    height: 1250px;
+    display: flex;
+    align-items: center;
+}
+
+.meusVideos2 {
+    position: absolute;
+    margin-left: 820px;
+    margin-top: -570px;
+}
+
+#gridbox {
+    display: grid;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: -170px;
+    z-index: 2;
+    gap: 6%;
+    grid-template: "caixa1 caixa2 caixa3 caixa4 caixa5" 100px "caixa6 caixa7 caixa8 caixa9 caixa10" 100px "caixa11 caixa12 caixa13 caixa14 caixa15" 100px
+        "caixa16 caixa17 caixa18 caixa19 caixa20" 100px / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.omni-caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 7px 7px 7px #ffffff96;
+}
+
+
+#caixa1 {
+    background-color: #ffffff;
+    margin-left: 57px;
+}
+
+#caixa2 {
+    background-color: #ff5c8d;
+}
+
+#caixa3 {
+    background-color: #ffffff;
+}
+
+#caixa4 {
+    background-color: #ff5c8d;
+}
+
+#caixa5 {
+    background-color: #ffffff;
+}
+
+/*---------------------------------------*/
+
+#caixa6 {
+    margin-top: 100px;
+    background-color: #ffffff;
+    margin-left: 57px;
+    margin-right: 0%;
+}
+
+#caixa7 {
+    margin-top: 100px;
+    background-color: #ff5c8d;
+}
+
+#caixa8 {
+    margin-top: 100px;
+    background-color: #ffffff;
+}
+
+#caixa9 {
+    margin-top: 100px;
+    background-color: #ff5c8d;
+}
+
+#caixa10 {
+    margin-top: 100px;
+    background-color: #ffffff;
+}
+
+/*---------------------------------------*/
+
+#caixa11 {
+    margin-top: 400px;
+    margin-left: 57px;
+    background-color: #ffffff;
+}
+
+#caixa12 {
+    margin-top: 400px;
+    background-color: #ff5c8d;
+}
+
+#caixa13 {
+    margin-top: 400px;
+    background-color: #ffffff;
+}
+
+#caixa14 {
+    margin-top: 400px;
+    background-color: #ff5c8d;
+}
+
+#caixa15 {
+    margin-top: 400px;
+    background-color: #ffffff;
+}
+
+/*---------------------------------------*/
+
+#caixa16 {
+    margin-left: 57px;
+    margin-top: 700px;
+    background-color: #ffffff;
+}
+
+#caixa17 {
+    margin-top: 700px;
+    background-color: #ff5c8d;
+}
+
+#caixa18 {
+    margin-top: 700px;
+    background-color: #ffffff;
+}
+
+#caixa19 {
+    margin-top: 700px;
+    background-color: #ff5c8d;
+}
+
+#caixa20 {
+    margin-top: 700px;
+    background-color: #ffffff;
+}
+
+/*---------------------------------------*/
+
+.legendasPretas {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 1px;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 150px;
+}
+
+/*--------------------------------------------------*/
+
+@media (max-width:1200px)
+
+/*Para Tablet*/
+    {
+    .meusVideos2 {
+        position: absolute;
+        display: flex;
+        margin-left: 270px;
+        width: 450px;
+        margin-top: -550px;
+    }
+
+    .omni-caixa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -200px;
+        width: 160px;
+        height: 160px;
+        box-shadow: 7px 7px 7px #ffffff96;
+    }
+
+    #caixa1 {
+        background-color: #ffffff;
+        margin-left: 30px;
+    }
+
+    #caixa2 {
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa3 {
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    #caixa4 {
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa5 {
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa6 {
+        margin-top: 100px;
+        background-color: #ffffff;
+        margin-left: 30px;
+    }
+
+    #caixa7 {
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa8 {
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    #caixa9 {
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa10 {
+        margin-top: 100px;
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa11 {
+        margin-top: 400px;
+        margin-left: 30px;
+        background-color: #ffffff;
+    }
+
+    #caixa12 {
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa13 {
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    #caixa14 {
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa15 {
+        margin-top: 400px;
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa16 {
+        margin-left: 30px;
+        margin-top: 700px;
+        background-color: #ffffff;
+    }
+
+    #caixa17 {
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa18 {
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    #caixa19 {
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa20 {
+        margin-top: 700px;
+        margin-left: -30px;
+        background-color: #ffffff;
+    }
+
+    video {
+        width: 145px;
+    }
+
+    .legendas {
+        margin-top: 123px;
+        font-size: 8px;
+    }
+
+    .legendasPretas {
+        margin-top: 123px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width:650px)
+
+/*Para Celular*/
+    {
+    #meus-videos {
+        height: 2500px;
+    }
+
+    .meusVideos2 {
+        position: absolute;
+        display: flex;
+        margin-left: 65px;
+        width: 350px;
+        margin-top: -1180px;
+    }
+
+    .omni-caixa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -200px;
+        width: 160px;
+        height: 160px;
+        box-shadow: 7px 7px 7px #ffffff96;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa1 {
+        position: absolute;
+        background-color: #ffffff;
+        margin-left: 250px;
+        margin-top: -1780px;
+    }
+
+    #caixa2 {
+        position: absolute;
+        margin-left: 690px;
+        margin-top: -1780px;
+        background-color: #ff5c8d;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa3 {
+        position: absolute;
+        margin-top: -1250px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa4 {
+        position: absolute;
+        margin-top: -1250px;
+        margin-left: 690px;
+        background-color: #ffffff;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa5 {
+        position: absolute;
+        margin-top: -750px;
+        margin-left: 250px;
+        background-color: #ffffff;
+    }
+
+
+    #caixa6 {
+        position: absolute;
+        margin-top: -750px;
+        background-color: #ff5c8d;
+        margin-left: 690px;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa7 {
+        position: absolute;
+        margin-top: -300px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa8 {
+        position: absolute;
+        margin-top: -300px;
+        margin-left: 690px;
+        background-color: #ffffff;
+        color: black;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa9 {
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 250px;
+        background-color: #ffffff;
+    }
+
+    #caixa10 {
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 690px;
+        background-color: #ff5c8d;
+        color: black;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa11 {
+        position: absolute;
+        margin-top: 620px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa12 {
+        position: absolute;
+        margin-top: 620px;
+        margin-left: 690px;
+        background-color: #ffffff;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa13 {
+        position: absolute;
+        margin-top: 1070px;
+        margin-left: 250px;
+        background-color: #ffffff;
+    }
+
+    #caixa14 {
+        position: absolute;
+        margin-top: 1070px;
+        margin-left: 690px;
+        background-color: #ff5c8d;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa15 {
+        position: absolute;
+        margin-top: 1520px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+
+    #caixa16 {
+        position: absolute;
+        margin-left: 690px;
+        margin-top: 1520px;
+        background-color: #ffffff;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa17 {
+        position: absolute;
+        margin-top: 1950px;
+        margin-left: 250px;
+        background-color: #ffffff;
+    }
+
+    #caixa18 {
+        position: absolute;
+        margin-top: 1950px;
+        margin-left: 690px;
+        background-color: #ff5c8d;
+    }
+
+    /*---------------------------------------*/
+
+    #caixa19 {
+        position: absolute;
+        margin-top: 2400px;
+        margin-left: 250px;
+        background-color: #ff5c8d;
+    }
+
+    #caixa20 {
+        position: absolute;
+        margin-top: 2400px;
+        margin-left: 690px;
+        background-color: #ffffff;
+    }
+
+    /*---------------------------------------*/
+
+    video {
+        width: 145px;
+    }
+
+    .legendas {
+        margin-top: 123px;
+        font-size: 8px;
+    }
+
+    .legendasPretas {
+        margin-top: 123px;
+        font-size: 8px;
+    }
+}

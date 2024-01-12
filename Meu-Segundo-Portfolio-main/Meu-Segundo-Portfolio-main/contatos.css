@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://rsms.me/inter/inter.css');
+/*font-family: 'Inter', sans-serif;*/
+
+/*-----------------------------------------*/
+
+/*Área de Contatos*/
+
+#logoContatos {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+#tituloContatos {
+    /* margin-top: 80px; */
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../assets/titulos/ceuEstrelado.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    font-size: 80px;
+    font-family: Inter, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#entreEmContato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 60px;
+
+    background: linear-gradient(-30deg, #030140 0%, #000000 60%);
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.iconeDeContatos {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #B1B0D9;
+    background: linear-gradient(-30deg, #030140 0%, #000000 60%);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.iconeDeContatos img {
+    width: 60px;
+    margin-right: 3px;
+}
+
+.iconeDeContatos:hover {
+    cursor: pointer;
+    transition: ease-out 1s;
+    background: #B1B0D9;
+}
+
+#todosOsContatos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.formularioContato {
+    max-width: 600px;
+    height: auto;
+    float: none;
+    margin: auto;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 6px;
+    background: linear-gradient(-30deg, #030140 0%, #00010D 60%);
+    box-shadow: #B1B0D9 5px 5px 5px;
+    position: relative;
+}
+
+.formularioContato:before {
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: #0f0f0f;
+    content: "";
+    position: absolute;
+    left: 6%;
+    top: -4.5%;
+    margin-top: -4px;
+    margin-left: 6px;
+    z-index: 2;
+}
+
+.formularioContato label {
+    float: left;
+    width: 100%;
+    margin-bottom: 1.2em;
+}
+
+.formularioContato label span {
+    width: 100%;
+    float: left;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+    font-family: 'Inter', sans-serif;
+}
+
+.formularioContato label input {
+
+    font-size: 1em;
+    color: #0f0f0f;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    border: 1px #030140 solid;
+    border-radius: 4px;
+    padding: 0.6em;
+    transition: 0.3s;
+    width: 40%;
+}
+
+.formularioContato label select {
+    font-size: 1em;
+    color: #0f0f0f;
+    border: 1px #030140 solid;
+    border-radius: 4px;
+    padding: 0.6em;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formularioContato label textarea {
+    font-size: 1em;
+    color: #0f0f0f;
+    border: 1px #030140 solid;
+    border-radius: 4px;
+    width: 99%;
+    height: 200px;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+}
+
+.formularioContato label input:focus {
+    box-shadow: 0 0 5px 0px #030140;
+    border: 1px #B1B0D9 solid;
+    color: #0f0f0f;
+    font-family: 'Inter', sans-serif;
+}
+
+.formularioContato label select:focus {
+    box-shadow: 0 0 5px 0px #030140;
+    border: 1px #B1B0D9 solid;
+    font-family: 'Inter', sans-serif;
+}
+
+.formularioContato label textarea:focus {
+    box-shadow: 0 0 5px 0px #030140;
+    border: 1px #B1B0D9 solid;
+    color: #0f0f0f;
+    font-family: 'Inter', sans-serif;
+}
+
+.formularioContato button.btn-envia {
+
+    background: white;
+    width: 100%;
+    padding: 0.8em 0em;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0;
+    color: #030140;
+    font-size: 1.3em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.formularioContato button.btn-envia:hover {
+    background-color: #B1B0D9;
+    color: white;
+}
+
+/*--------------Responsividade*/
+
+@media (max-width: 1080px)
+
+/*Celular*/
+    {
+    .formularioContato {
+        max-width: 310px;
+    }
+
+    .formularioContato label textarea {
+        width: 300px;
+    }
+
+    .formularioContato label input {
+        width: 284px;
+    }
+
+    #logoContatos {
+        display: none;
+    }
+
+    #entreEmContato {
+        margin-left: 10%;
+
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    #tituloContatos{
+        font-size: 40px;
+    }
+}

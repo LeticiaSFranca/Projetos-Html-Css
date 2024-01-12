@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://rsms.me/inter/inter.css');
+/*font-family: 'Inter', sans-serif;*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Barra de Rolagem*/
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: url(../assets/titulos/ceuEstrelado.jpg);
+    width: 10px;
+}
+
+/* criando barra de navegação */
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 25px;
+    margin-left: -20px;
+}
+
+ul li{
+    margin-top: 6px;
+    margin-left: -80px;
+    font-family: 'Inter', sans-serif;
+}
+
+.espaco{
+    width: 5px;
+    height: auto;
+}
+
+nav {
+    width: 70%;
+}
+
+.logo {
+    padding: 10px 0;
+}
+
+#logoCabecalho{
+    margin-left: 50px;
+}
+
+.direita{
+    margin-right: 50px;
+}
+
+.botoesMenu{
+    border-radius: 6px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 7px 10px;
+    border: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 15.2061px;
+    transition: ease-in-out 0.3s;
+}
+
+a:hover {
+ color: #B1B0D9;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#minhaFoto{
+    width: 400px;
+    border-radius: 80%;
+}
+
+.logo {
+    padding: 15px 0;
+}
+
+.barra {
+    width: 100%;
+    background: #1b262c94;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 7;
+}
+
+.barra-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.centralizador {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* barra de navegação terminada */
+
+/* criando início */
+#inicio {
+    background: linear-gradient(-30deg, #030140 0%, #00010D 60%);
+    width: 100%;
+    zoom: 90%;
+    height: 850px;
+    display: flex;
+    align-items: center;
+}
+
+.altura-ajuste{
+    width: 100%;
+}
+
+.ajustador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.apresentacao {
+    color:white;
+    font-family: 'Inter', sans-serif;
+}
+
+.descricao {
+    font-size: 25px;
+    grid-area: descricao;
+    font-family: 'Inter', sans-serif;
+}
+
+.meuNome {
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    color: #B1B0D9;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.linkedin {
+    width: 450px;
+    height: 85px;
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    box-shadow: #B1B0D9 5px 5px 5px;
+    font-family: 'Inter', sans-serif;
+    margin-left: -10px;
+}
+
+.linkedin a {
+    width: 100%;
+    padding: 25px 0;
+    color: #0f0f0f;
+}
+
+.link {
+    font-size:25px;
+    width:50%;
+    text-align: center;
+    padding: 12px 0 ;
+    transition: ease-in-out 0.3s;
+}
+
+.link:hover {
+    letter-spacing: 5px;
+    color: #0e09a7;
+    text-decoration: none;
+}
+
+.desenho {
+    width: 380px;
+    grid-area: desenho;
+}
+
+.close-menu {
+    display: none;
+}
+
+.meuNome::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#pontinhosInicio1{
+    z-index: 1;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 0px;
+    width: 700px;
+}
+
+#logoCabecalho{
+    margin-left: -40px;
+}
+
+/*-------------------------------------------*/
+
+@media (max-width:650px) /*Para Celular*/{
+    
+    .altura-ajuste{
+        display: flex;
+        justify-content: center;
+    }
+
+    .organizador {
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-areas:  
+        "desenho"
+        "descricao";
+        line-height: 35px;
+    }
+
+    #minhaFoto{
+        width: 180px;
+        margin-top: 20px;
+        margin-left: -90px; 
+        margin-bottom: 60px;
+    }
+
+    .desenho {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        margin-left: 110px;
+    }
+
+    .descricao {
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .meuNome {
+        font-size: 30px;
+    }
+
+    .esquerda, .direita {
+        margin: 0;
+    }
+
+    .linkedin{
+        width: 170px;
+        height: 60px;
+        font-size: 12px;
+        margin-left: 60px;
+        margin-top: -20px;
+    }
+
+    .apresentacao{
+        margin-top: -50px;
+    } 
+
+    #pontinhosInicio1{
+        width: 500px;
+        margin-top: -450px;
+        margin-left: -100px;
+    }
+}

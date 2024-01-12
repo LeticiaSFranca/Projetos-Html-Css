@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://rsms.me/inter/inter.css');
+/*font-family: 'Inter', sans-serif;*/
+
+#estudando {
+    background: linear-gradient(-70deg, #0f0f0f 51.05%, #ffffff 51.05%);
+    height: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+/*Estudando*/
+
+#tituloEstudando {
+    margin-top: -100px;
+    margin-left: 30px;
+}
+
+.estudando {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: -200px;
+}
+
+#gridboxEstudando {
+    display: grid;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    z-index: 2;
+    gap: 6%;
+    margin-top: 200px;
+    grid-template: "caixa1_2 caixa2_2 " 150px "caixa3_2 caixa4_2" 150px
+        "caixa5_2 caixa6_2" 150px / 1fr 1fr;
+}
+
+.omni-caixa4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow: 7px 7px 7px #ff5c8d;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/*------------------------------------------------*/
+
+#caixa1_3
+
+/*HTML e CSS*/
+    {
+    position: absolute;
+    margin-top: -260px;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: -160px;
+}
+
+#caixa1_3:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+/*------------------------------------------------*/
+
+#caixa2_3
+
+/*CSS*/
+    {
+    position: absolute;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-top: -260px;
+}
+
+#caixa2_3:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+/*------------------------------------------------*/
+
+#caixa3_3
+
+/*Ícone Edição de Vídeo*/
+    {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: -260px;
+}
+
+#caixa3_3:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+/*------------------------------------------------*/
+/*Formação*/
+
+#tituloFormacao {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -100px;
+    width: 400px;
+}
+
+#gridboxFormacao {
+    display: grid;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    z-index: 2;
+    gap: 6%;
+    margin-top: 200px;
+    grid-template: "caixa1_4 caixa2_4 " 150px / 1fr 1fr;
+    margin-left: -300px;
+}
+
+.omni-caixa5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow: 7px 7px 7px #ffffff;
+    background-color: #ff5c8d;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+/*------------------------------------------------*/
+
+#caixa1_4
+
+/*Colégio Supremo*/
+    {
+    position: absolute;
+    margin-top: -150px;
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: 1200px;
+}
+
+#caixa1_4:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: #000000;
+}
+
+/*----------------------------------------------*/
+
+#caixa2_4
+
+/*Colégio Cotemig*/
+    {
+    position: absolute;
+    margin-top: -150px;
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: 1700px;
+}
+
+#caixa2_4:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: black;
+}
+
+/*----------------------------------------------*/
+#legendaEscolas {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 160px;
+}
+
+#logoCotemig {
+    margin-top: -10px;
+}
+
+#logoSupremo {
+    margin-top: -10px;
+}
+
+/*----------------------------------------------*/
+
+#tituloCursos {
+    position: absolute;
+    display: flex;
+    margin-top: 190px;
+    margin-left: -400px;
+}
+
+#gridboxCursos {
+    position: absolute;
+    display: grid;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    z-index: 2;
+    gap: 6%;
+    margin-top: 270px;
+    grid-template: "caixa1_2 caixa2_2 caixa3_2 caixa4_2" 150px / 1fr;
+}
+
+.omni-caixa6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    background-color: #ff5c8d;
+    color: white;
+}
+
+#caixa1_5
+
+/*Curso 1*/
+    {
+    position: absolute;
+    margin-top: 170px;
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: -700px;
+    box-shadow: 7px 7px 7px #0f0f0f;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+#caixa1_5:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: black;
+}
+
+#caixa2_5
+
+/*Curso 2*/
+    {
+    position: absolute;
+    margin-top: 170px;
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: -250px;
+    box-shadow: 7px 7px 7px #0f0f0f;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+#caixa2_5:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: black;
+}
+
+#caixa3_5
+
+/*Curso 3*/
+    {
+    position: absolute;
+    margin-top: 170px;
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    box-shadow: 7px 7px 7px #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+#caixa3_5:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: black;
+}
+
+#caixa4_5
+
+/*Curso 4*/
+    {
+    position: absolute;
+    margin-top: 170px;
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: 660px;
+    box-shadow: 7px 7px 7px #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+#caixa4_5:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: black;
+}
+
+/*----------------------------------------------*/
+
+@media (max-width:1200px)
+
+/*Para Tablet*/
+    {
+
+    /*Resposividade do Estudando*/
+    #estudando {
+        background: linear-gradient(-80deg, #0f0f0f 55%, #ffffff 55%);
+    }
+
+    .estudando {
+        width: 350px;
+        position: absolute;
+    }
+
+    #caixa1_3 {
+        position: absolute;
+        margin-top: -300px;
+        width: 100px;
+        height: 100px;
+        margin-left: -120px;
+    }
+
+    #iconeJS {
+        width: 90px;
+    }
+
+    #caixa2_3 {
+        position: absolute;
+        margin-top: -300px;
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+    }
+
+    #iconePCTOffice {
+        width: 80px;
+    }
+
+    #caixa3_3 {
+        position: absolute;
+        margin-top: -300px;
+        width: 100px;
+        height: 100px;
+        margin-left: 160px;
+    }
+
+    #iconeGimp {
+        width: 80px;
+    }
+
+    /*------Resposividade da Formação-------*/
+
+    #tituloFormacao {
+        position: absolute;
+        display: flex;
+        width: 340px;
+        margin-left: 600px;
+        margin-top: -80px;
+    }
+
+    #caixa1_4
+    /*Colégio Supremo*/
+        {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        margin-left: 1560px;
+        margin-top: -200px;
+    }
+
+    #logoSupremo {
+        width: 100px;
+    }
+
+    #caixa2_4
+    /*Colégio Cotemig*/
+        {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        margin-left: 1970px;
+        margin-top: -200px;
+    }
+
+    #logoCotemig {
+        width: 180px;
+    }
+
+    #legendaEscolas{
+        margin-top: 130px;
+        font-size: 11px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    /*-----Cursos-----*/
+
+    #tituloCursos {
+        position: absolute;
+        display: flex;
+        margin-top: 190px;
+        margin-left: 40px;
+    }
+
+    #caixa1_5
+    /*Curso 1*/
+        {
+        position: absolute;
+        margin-top: 170px;
+        width: 200px;
+        height: 250px;
+        margin-left: 250px;
+    }
+
+    #caixa2_5
+    /*Curso 2*/
+        {
+        position: absolute;
+        margin-top: 170px;
+        width: 200px;
+        height: 250px;
+        margin-left: 700px;
+    }
+
+    #caixa3_5
+    /*Curso 3*/
+        {
+        position: absolute;
+        margin-top: 170px;
+        width: 200px;
+        height: 250px;
+        margin-left: 1150px;
+    }
+
+    #caixa4_5
+    /*Curso 4*/
+        {
+        position: absolute;
+        margin-top: 170px;
+        width: 200px;
+        height: 250px;
+        margin-left: 1620px;
+    }
+}
+
+@media (max-width:650px)
+
+/*Para Celular*/
+    {
+
+    /*Resposividade do Estudando*/
+    #estudando {
+        background: linear-gradient(60deg, #ffffff 50%, #ffffff 50%);
+    }
+
+    #tituloEstudando{
+        width: 470px;
+        margin-left: 70px;
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+
+    #caixa1_3 {
+        position: absolute;
+        margin-top: -320px;
+        width: 100px;
+        height: 100px;
+        margin-left: -130px;
+    }
+
+    #iconeJS {
+        width: 90px;
+    }
+
+    #caixa2_3 {
+        position: absolute;
+        margin-top: -320px;
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+    }
+
+    #iconePCTOffice {
+        width: 80px;
+    }
+
+    #caixa3_3 {
+        position: absolute;
+        margin-top: -320px;
+        width: 100px;
+        height: 100px;
+        margin-left: 150px;
+    }
+
+    #iconeGimp {
+        width: 80px;
+    }
+
+    /*------Resposividade da Formação-------*/
+
+    #formacao{
+        background-color: #0f0f0f;
+        width: 100%;
+        height: 400px;
+    }
+
+    #tituloFormacao {
+        position: absolute;
+        display: flex;
+        width: 300px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+
+    #caixa1_4
+    /*Colégio Supremo*/
+        {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        margin-left: 70px;
+        margin-top: -50px;
+    }
+
+    #logoSupremo {
+        width: 100px;
+    }
+
+    #caixa2_4
+    /*Colégio Cotemig*/
+        {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        margin-left: 520px;
+        margin-top: -50px;
+    }
+
+    #logoCotemig {
+        width: 180px;
+    }
+
+    #legendaEscolas{
+        margin-top: 130px;
+        font-size: 11px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    /*-----Cursos-----*/
+
+    #cursos{
+        background-color: #ffffff;
+        height: 1500px;
+    }
+
+    #tituloCursos {
+        position: absolute;
+        display: flex;
+        margin-top: 950px;
+        margin-left: -340px;
+        width: 200px;
+    }
+
+    #caixa1_5
+    /*Curso 1*/
+        {
+        position: absolute;
+        margin-top: 1500px;
+        width: 120px;
+        height: 120px;
+        margin-left: -700px;
+    }
+
+    #caixa2_5
+    /*Curso 2*/
+        {
+        position: absolute;
+        margin-top: 1500px;
+        width: 120px;
+        height: 120px;
+        margin-left: -300px;
+    }
+
+    #caixa3_5
+    /*Curso 3*/
+        {
+        position: absolute;
+        margin-top: 1800px;
+        width: 120px;
+        height: 120px;
+        margin-left: -700px;
+        box-shadow: 7px 7px 7px #000000;
+    }
+
+    #caixa4_5
+    /*Curso 4*/
+        {
+        position: absolute;
+        margin-top: 1800px;
+        width: 120px;
+        height: 120px;
+        margin-left: -300px;
+        box-shadow: 7px 7px 7px #000000;
+    }
+}

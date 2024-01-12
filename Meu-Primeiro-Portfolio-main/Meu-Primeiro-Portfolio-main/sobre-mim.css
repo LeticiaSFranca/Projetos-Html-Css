@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://rsms.me/inter/inter.css');
+/*font-family: 'Inter', sans-serif;*/
+
+#sobre-mim {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.ajustador-2 {
+    padding: 144px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 67px;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.circulo {
+    position: absolute;
+}
+
+@keyframes html {
+    0% {
+        bottom: 0;
+        left: 250px;
+    }
+    100% {
+        bottom: 0;
+        left: 50px;
+    }
+}
+
+@keyframes css {
+    0% {
+        bottom: 0;
+        left: 50px;
+    }
+    100% {
+        bottom: 0;
+        left: 250px;
+    }
+}
+
+.html {
+    bottom: 0;
+    left: 0;
+    animation: html 3s infinite linear alternate-reverse ;
+}
+
+.js {
+    bottom: 0;
+    left: 150px;
+}
+
+.css {
+    bottom: 0;
+    left: 300px;
+    animation: css 3s infinite linear alternate-reverse;
+}
+
+.sobre-mim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: -200px;
+}
+
+.sobre-mim p {
+    text-indent: 30px;
+    font-size: 19px;
+    max-width: 609.25px;
+    color: #0f0f0f;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width:1200px) /*Para Tablet*/ {
+    .ajustador-2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-right: 60px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .ajustador-2 p {
+        font-size: 15px;
+    }
+
+    .sobre-mim p {
+        text-indent: 0;
+        margin-bottom: 40px;
+    }
+
+    #decoracaoDI{
+        position: absolute;
+        display: flex;
+        width: 0;
+    }
+
+    #decoracaoES{
+        position: absolute;
+        width: 250px;
+    }
+}
+
+@media(max-width:650px) /*Para Celular*/{
+
+    .ajustador-2 {
+        max-width: 350px;
+        padding: 70px 30px;
+    }
+
+    .avatar {
+        margin-right: 0;
+    }
+
+    .sobre-mim{
+        margin-top: -90px;
+    }
+
+    #decoracaoDI{
+        position: absolute;
+        display: flex;
+        width: 0px;
+    }
+
+    #decoracaoES{
+        position: absolute;
+        width: 120px;
+    }
+
+    .sobre-mim p {
+        text-indent: 30px;
+        font-size: 13px;
+        max-width: 609.25px;
+        color: #0f0f0f;
+        font-family: 'Inter', sans-serif;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        letter-spacing: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h5 img{
+        width: 250px;
+    }
+
+}
+
+#decoracaoDI{
+    z-index: 1;
+    display: flex;
+    justify-content: right;
+    margin-top: -490px;
+}
+
+#decoracaoES{
+    position: absolute;
+    z-index: 1;
+    margin-left: 0;
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* criando página de vídeos */
+#meus-videos {
+    background: linear-gradient(-30deg, #030140 0%, #00010D 60%);
+    height: 500px;
+}
+
+/* Esse é o título da aba de vídeos */
+.meusVideosTittle { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 100px;
+    color: white;
+    font-size: 100px;
+    font-family: Inter, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#botoesDosVideos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -80px;
+    text-align: center;
+}
+
+.btnDrive{
+    background: white;  
+    width: 80px;
+    height: 80px;
+    border-radius: 62px;
+    border: 0;
+    box-shadow: #B1B0D9 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnDrive:hover{
+    cursor: pointer;
+    background: #B1B0D9;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+#btnDrive2{
+    margin-left: 50px;
+}
+/*--------------------------------------------------*/
+
+@media (max-width:650px)
+
+/*Para Celular*/
+    {
+    #meus-videos {
+        height: 280px;
+    }
+
+    .meusVideosTittle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        margin-top: -30px;
+    }
+
+    .meusVideos2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .btnDrive{
+        width: 70px;
+        height: 70px;
+        margin-top: 50px;
+    }
+
+}
