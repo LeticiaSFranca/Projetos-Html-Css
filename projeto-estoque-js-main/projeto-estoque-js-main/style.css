@@ -1,0 +1,84 @@
+body{
+    background-color: #FCC8D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    align-content: center;
+}
+
+section{
+    background-color: #FEF2F4;
+    border-radius: 50px;
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #FFABAB;
+}
+
+h2{
+    font-family: Poppins, sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#wrap input{
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    border: 1px solid #D14D72;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#botoes, #saida, #wrap{
+    margin-top: 3px;
+    text-align: center;
+    border: 1px solid #D14D72;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: transparent;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+button{
+    width: 30%;
+    height: 35px;
+    background-color: #D14D72;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+}
+
+button:hover, tr:hover{
+    background-color:#FCC8D1;
+    color: black;
+    cursor: pointer;
+}
+
+#saida input{
+    height: 20px;
+    width: 20px;
+}
+
+table{
+    border: solid black;
+    border-radius: 10px;
+    background-color: #D14D72;
+    color: white;
+}
+
+td{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#meuNome{
+    font-size: 13px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
