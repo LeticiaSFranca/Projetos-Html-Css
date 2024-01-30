@@ -5,8 +5,6 @@ Linguagens usadas na construção do site:
   <li> HTML e CSS </li>
 </ul>
 
-<a href="https://primeirosite-leticiafranca.netlify.app/" target="_blank">Acessar Site</a>
-
 Este site foi a primeira "coisa" que eu já fiz em HTML. Ele foi um trabalho escolar individual dado pelo meu professor de Front-End, no qual o tema foi livre, contanto que fosse algo que gostássemos muito, então resolvi fazer um site de um haras, já que amo cavalos.
 
 Eu decidi postar esse site aqui no GitHub para que seja possível ver a minha evolução com os códigos de Front-End, nos quais gosto muito. O site não está resposivo, já que na época eu não tinha aprendido ainda.
