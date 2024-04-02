@@ -24,7 +24,7 @@ main {
 }
 
 .main__info div a, .main__info div button {
-    width: 100%;
+    width: 90%;
     padding: 10px 0;
     border-radius: 3px;
     font-size: 16px;
@@ -42,4 +42,57 @@ main {
 .main__info div button {
     background: transparent;
     border: 1px solid var(--green);
+}
+
+.main__info #mario-luigi {
+    width: 680px;
+}
+
+.main__info #logo-movie {
+    width: 300px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+    
+    .main__info {
+        max-width: 100%;
+    }
+    
+    .main__info p {
+        font-size: 16px;
+        margin: 10px 0 14px;
+    }
+    
+    .main__info div {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        gap: 1rem;
+    }
+    
+    .main__info div a, .main__info div button {
+        font-size: 14px;
+    }
+
+    .main__info #mario-luigi {
+        width: 200px;
+    }
+
+    #mario-luigi {
+        padding-top: 20px;
+    }
+
+    .main__info #logo-movie {
+        width: 200px;
+    }
+
+        #logo-movie {
+            padding-top: 50px;
+        }
 }
