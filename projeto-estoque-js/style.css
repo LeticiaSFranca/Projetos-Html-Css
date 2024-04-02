@@ -10,8 +10,8 @@ body{
 section{
     background-color: #FEF2F4;
     border-radius: 50px;
-    width: 1000px;
-    height: 600px;
+    width: 90%;
+    height: 95vh;
     text-align: center;
     box-shadow: 5px 5px 5px #FFABAB;
 }
